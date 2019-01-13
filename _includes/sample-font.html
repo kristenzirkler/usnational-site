@@ -1,0 +1,10 @@
+
+<div class="sample-font">
+	<p>{{ include.headline-font }} : {{ include.body-font }}</p><br>
+	{% if include.headline-font %}
+	<h1 style="font-family:'{{ include.headline-font }}';{{ include.header-font-style }}">Our Values</h1>
+	{% endif %}
+	{% if include.body-font %}
+	<p style="font-family:'{{ include.body-font }}';{{ include.body-font-style }}">U.S. National Insurance strives to have a positive, tangible, and long lasting impact on as many <strong>individuals and businesses</strong> it has the opportunity to serve. We also believe that our business has a purpose that stretches beyond the insurance industry and we are committed to improving our community, our society, and to helping those in need.</p>
+	{% endif %}
+</div>
